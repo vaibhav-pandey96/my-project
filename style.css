@@ -1,0 +1,58 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    background-color: #f2f2f2; /* Light background color */
+}
+#appointmentForm {
+    background-color: #fff;
+    position: absolute;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Set a max width */
+    width: 100%; /* Responsive width */
+}
+label, input, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+button:hover {
+    background-color: #45a049;
+}
+.container img {
+    width: 100%;
+    height: auto; 
+}
+.container {
+    position: relative; /* Set position relative to enable absolute positioning for children */
+    width: 100%;
+    max-width: 800px; /* Limit the container width */
+    margin: 0 auto; /* Center the container */
+}
+#appointmentForm{
+    position: absolute; /* Absolute position on top of the image */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust to perfectly center */
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Light shadow */
+    max-width: 400px; /* Limit form width */
+    width: 100%; /* Responsive form width */
+}
