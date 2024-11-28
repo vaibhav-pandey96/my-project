@@ -1,11 +1,11 @@
 // login.js
-import { auth } from './firebase-config.js';  // Importing Firebase Auth instance
+import { auth } from './firebase-config.js'; 
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'https://www.gstatic.com/firebasejs/9.1.0/firebase-auth.js';
 
 const loginForm = document.getElementById('loginForm');
 if (loginForm) {
     loginForm.addEventListener('submit', async (event) => {
-        event.preventDefault();  // Prevent default form submission
+        event.preventDefault(); 
 
         const email = document.getElementById('email').value;
         const password = document.getElementById('password').value;
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 alert('Registration successful! You can now log in.');
                 console.log('User registered:', userCredential.user);
                 // Redirecting to login page after successful registration
-                window.location.href = 'login.html';  // Redirect to login page after registration
+                window.location.href = 'login.html';  // Redirecting to login page after registration
             } catch (error) {
                 console.error('Error registering:', error);
                 alert('Error registering: ' + error.message);
