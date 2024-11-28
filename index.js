@@ -1,10 +1,9 @@
-// index.js
-import { db } from './firebase-config.js';  // Import Firestore database instance
+import { db } from './firebase-config.js';  
 import { collection, addDoc } from 'https://www.gstatic.com/firebasejs/9.1.0/firebase-firestore.js';
 
 // Handle form submission
 document.getElementById('appointmentForm').addEventListener('submit', async (event) => {
-    event.preventDefault();  // Prevent default form submission
+    event.preventDefault();  
 
     // Get form input values
     const studentID = document.getElementById('studentID').value;
